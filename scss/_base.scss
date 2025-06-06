@@ -2,23 +2,78 @@
 *{
     outline: solid 1px green;
 }
+
 *,*:before,*:after{
 	box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: $line-height;
+    font-weight: $font-weight-medium;
 }
 
 img{
     width: 100%;
     height: auto;
     vertical-align: middle;
+    object-fit: cover;
 }
 
 a{
     display: inline-block;
     text-decoration: none;
-    color: #000;
+    color: var(--text-color-primary);
 }
 
-body{
-    font-family: "Noto Sans TC", sans-serif;
-    line-height: 1.5;
+time{
+    padding: 4px;
 }
+
+.intro{
+    margin-bottom: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.sticker{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.highlight{
+    font-weight: $font-weight-bold;
+    color: var(--text-color-secondary);
+    background: var(--primary-color);
+    border-radius: $border-radius;
+    padding: 6px 12px;
+    margin-left: 4px;
+}
+
+.btnPrimary{
+    color: var(--primary-color);
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    border-radius: $border-radius;
+    padding: 8px 16px;
+    &:hover{
+        color: var(--text-color-secondary);
+        background: var(--primary-color);
+    }
+}
+
+.btnSecondary{
+    color: var(--secondary-color);
+    text-align: center;
+    border: 1px solid var(--text-color-primary);
+    border-radius: $border-radius;
+    padding: 8px 16px;
+    &:hover{
+        color: var(--text-color-secondary);
+        background: var(--secondary-color);
+    }
+}
+
