@@ -1,0 +1,24 @@
+/* Debug用*/
+*{
+    outline: solid 1px green;
+}
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+}
