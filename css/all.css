@@ -269,6 +269,32 @@ address:hover {
 }
 
 /*header RWD*/
+@media (max-width: 992px) {
+  .img-box {
+    width: 100%;
+  }
+  .title-text {
+    padding: 24px;
+  }
+  .title-text .sub-title {
+    font-size: clamp(18px, 7vw, 28px);
+  }
+  .banner {
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+  .banner .img-box {
+    margin-bottom: 48px;
+  }
+  .banner .text-box {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .banner .banner-text {
+    max-width: 100%;
+    padding-left: 12px;
+  }
+}
 /*footer RWD*/
 @media (max-width: 992px) {
   .contact {
@@ -280,13 +306,11 @@ address:hover {
   .title {
     flex-wrap: wrap;
   }
-  .img-box {
-    width: 100%;
+  .title .img-box {
     height: calc(100vh - 90px - 168px);
   }
   .text-box {
     width: 100%;
-    padding: 24px;
   }
   .text-box .main-title {
     font-size: 52px;
