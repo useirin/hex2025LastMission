@@ -1,17 +1,30 @@
-/*header RWD*/
+/* header RWD */
 @media (max-width: 767px) {
     .title {
         flex-wrap: wrap;
         .img-box {
-            width: 100%;
             height: calc(100vh - 90px - 168px);
         }
-        .text-box {
-            width: 100%;
-            padding: 24px;
-            .main-title {
-            font-size: $font-size-h1Mobile;
-            }
+    }
+    .text-box {
+        width: 100%;
+        .main-title {
+        font-size: $font-size-h1Mobile;
         }
+    }
+}
+
+/* main RWD */
+
+@media (max-width: 767px) {
+    .card-list {
+        gap: 0;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .page-number {
+    margin-bottom: 64px;
     }
 }
