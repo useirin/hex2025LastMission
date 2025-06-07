@@ -150,6 +150,7 @@ time {
 
 .btn-secondary {
   display: inline-block;
+  align-self: flex-start;
   color: var(--secondary-color);
   text-align: center;
   border: 1px solid var(--text-color-primary);
@@ -313,7 +314,6 @@ address:hover {
   align-items: stretch;
   flex-wrap: wrap;
 }
-
 .card-head {
   padding-bottom: 16px;
   width: 100%;
@@ -337,9 +337,6 @@ address:hover {
 }
 .card-body .intro {
   color: var(--secondary-color);
-}
-.card-body button {
-  justify-content: flex-end;
 }
 
 .page-number {

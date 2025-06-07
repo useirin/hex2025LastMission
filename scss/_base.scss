@@ -79,6 +79,7 @@ time {
 
 .btn-secondary {
     display: inline-block;
+    align-self: flex-start; //解決父層flex強制變block的問題
     color: var(--secondary-color);
     text-align: center;
     border: 1px solid var(--text-color-primary);
