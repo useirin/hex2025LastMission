@@ -1,8 +1,10 @@
 /* header RWD */
+
 @media (max-width: 767px) {
     .title {
         flex-wrap: wrap;
         .img-box {
+            width: 100%;
             height: calc(100vh - 90px - 168px);
         }
     }
@@ -11,6 +13,9 @@
         .main-title {
         font-size: $font-size-h1Mobile;
         }
+    }
+    .title-text {
+        padding: 24px;
     }
 }
 

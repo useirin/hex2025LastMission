@@ -2,11 +2,12 @@
 
 @media (max-width: 992px) {
     .img-box {
-        width: 100%;
+        width: 50%;
     }
 
     .title-text {
-        padding: 24px;
+        padding-left: 40px;
+        padding-right: 40px;
         .sub-title {
             font-size: clamp(18px, 7vw, $font-size-medium);
         }
@@ -15,17 +16,18 @@
     .banner {
         flex-wrap: wrap;
         margin-bottom: 64px;
-    .img-box {
-        margin-bottom: 48px;
-    }
-    .text-box {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .banner-text {
-        max-width: 100%;
-        padding-left: 12px;
-    }
+        .img-box {
+            width: 100%;
+            margin-bottom: 48px;
+        }
+        .text-box {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .banner-text {
+            max-width: 100%;
+            padding-left: 12px;
+        }
     }
 }
 
