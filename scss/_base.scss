@@ -64,6 +64,7 @@ time {
 }
 
 .btn-secondary {
+    display: inline-block;
     color: var(--secondary-color);
     text-align: center;
     border: 1px solid var(--text-color-primary);
@@ -77,5 +78,4 @@ time {
 
 .text-shadow {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 }

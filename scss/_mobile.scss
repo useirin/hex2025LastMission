@@ -2,16 +2,16 @@
 @media (max-width: 767px) {
     .title {
         flex-wrap: wrap;
-        .img-box {
-            width: 100%;
-            height: calc(100vh - 90px - 168px);
+    }
+    .img-box {
+        width: 100%;
+        height: calc(100vh - 90px - 168px);
         }
-        .text-box {
-            width: 100%;
-            padding: 24px;
-            .main-title {
-            font-size: $font-size-h1Mobile;
-            }
+    .text-box {
+        width: 100%;
+        padding: 24px;
+        .main-title {
+        font-size: $font-size-h1Mobile;
         }
     }
 }
