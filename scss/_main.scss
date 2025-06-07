@@ -128,16 +128,21 @@
 .page-number {
     display: flex;
     justify-content: center;
-    gap: 8px;
-    letter-spacing: 12px;
     margin-bottom: 80px;
+    .page-button {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    }
     a {
+        display: block;
         color: var(--secondary-color);
         &:hover {
             transform: scale(1.5);
         }
         &:active {
-            transform: scale(0.9);
+            transform: scale(1.0);
         }
     }
 }

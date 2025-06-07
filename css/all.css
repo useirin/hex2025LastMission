@@ -336,18 +336,23 @@ address:hover {
 .page-number {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  letter-spacing: 12px;
   margin-bottom: 80px;
 }
+.page-number .page-button {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
 .page-number a {
+  display: block;
   color: var(--secondary-color);
 }
 .page-number a:hover {
   transform: scale(1.5);
 }
 .page-number a:active {
-  transform: scale(0.9);
+  transform: scale(1);
 }
 
 .ellipsis {
