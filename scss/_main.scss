@@ -1,0 +1,32 @@
+.title {
+    display: flex;
+    height: calc(100vh - 90px);
+    .img-box {
+        width: 50%;
+        img{
+        height: 100%;
+        object-fit: cover;
+        }
+    }
+    .text-box {
+        width: 50%;
+        display: flex;
+        background-image: url(/img/desktop/header/Hero_Section2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        justify-content: center;
+        padding: 80px;
+        .main-title {
+            font-size: clamp($font-size-h1Mobile, 10vw, $font-size-h1);
+            font-weight: $font-weight-black;
+            color: var(--primary-color);
+        }
+        .subtitle {
+            font-size: $font-size-medium;
+            font-weight: $font-weight-bold;
+            color: var(--primary-color);
+        }
+    }
+}
