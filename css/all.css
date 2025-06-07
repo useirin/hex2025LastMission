@@ -215,8 +215,8 @@ address:hover {
 }
 
 .text-box {
-  display: flex;
   width: 50%;
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -235,7 +235,7 @@ address:hover {
 
 .title-text {
   display: flex;
-  padding: 80px;
+  padding-left: 80px;
 }
 .title-text .main-title {
   font-size: clamp(52px, 10vw, 120px);
@@ -361,10 +361,11 @@ address:hover {
 /* header RWD */
 @media (max-width: 992px) {
   .img-box {
-    width: 100%;
+    width: 50%;
   }
   .title-text {
-    padding: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .title-text .sub-title {
     font-size: clamp(18px, 7vw, 28px);
@@ -374,6 +375,7 @@ address:hover {
     margin-bottom: 64px;
   }
   .banner .img-box {
+    width: 100%;
     margin-bottom: 48px;
   }
   .banner .text-box {
@@ -403,6 +405,7 @@ address:hover {
     flex-wrap: wrap;
   }
   .title .img-box {
+    width: 100%;
     height: calc(100vh - 90px - 168px);
   }
   .text-box {
@@ -410,6 +413,9 @@ address:hover {
   }
   .text-box .main-title {
     font-size: 52px;
+  }
+  .title-text {
+    padding: 24px;
   }
 }
 /* main RWD */
