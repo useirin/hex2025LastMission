@@ -235,7 +235,7 @@ address:hover {
 }
 
 .bg-box {
-  background-image: url(/img/desktop/header/Hero_Section2.png);
+  background-image: url(img/desktop/header/Hero_Section2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -479,7 +479,7 @@ address:hover {
   }
   .title .img-box {
     width: 100%;
-    content: url("/img/mobile/header/Hero_Section.png");
+    content: url("img/mobile/header/Hero_Section.png");
     height: calc(100vh - 90px - 168px);
     object-fit: cover;
   }
@@ -493,7 +493,7 @@ address:hover {
     padding: 24px;
   }
   .banner .img-box {
-    content: url("/img/mobile/header/About_Section.png");
+    content: url("img/mobile/header/About_Section.png");
   }
 }
 /* main RWD */
