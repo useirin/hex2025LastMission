@@ -1,4 +1,5 @@
-/*header RWD*/
+/* header RWD */
+
 @media (max-width: 992px) {
     .img-box {
         width: 100%;
@@ -28,9 +29,16 @@
     }
 }
 
+/* main RWD */
+
+@media (max-width: 992px) {
+    .card {
+        width: calc((100% - 24px) / 2);
+    }
+}
 
 
-/*footer RWD*/
+/* footer RWD */
 
 @media (max-width: 992px) {
     .contact{

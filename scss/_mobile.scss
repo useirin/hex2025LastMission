@@ -1,4 +1,4 @@
-/*header RWD*/
+/* header RWD */
 @media (max-width: 767px) {
     .title {
         flex-wrap: wrap;
@@ -11,5 +11,20 @@
         .main-title {
         font-size: $font-size-h1Mobile;
         }
+    }
+}
+
+/* main RWD */
+
+@media (max-width: 767px) {
+    .card-list {
+        gap: 0;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .page-number {
+    margin-bottom: 64px;
     }
 }
