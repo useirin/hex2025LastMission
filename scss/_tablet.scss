@@ -16,13 +16,20 @@
     .banner {
         flex-wrap: wrap;
         margin-bottom: 64px;
+        padding-bottom: 48px;
         .img-box {
             width: 100%;
             margin-bottom: 48px;
+            img {
+                height: calc(100vh - 90px - 206px);
+            }
         }
         .text-box {
             width: 100%;
             margin: 0 auto;
+            .text-shadow {
+                text-shadow: none;
+            }
         }
         .banner-text {
             max-width: 100%;

@@ -66,13 +66,13 @@ button {
   --secondary-color: #4B4B4B;
   --text-color-primary: #000;
   --text-color-secondary: #fff;
+  --quote: #EDEDED;
 }
 
-/* Debug用*/
-* {
-  outline: solid 1px green;
-}
-
+/* Debug用
+*{
+    outline: solid 1px green;
+}*/
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -96,6 +96,21 @@ a {
 
 time {
   padding: 4px;
+  display: block;
+}
+
+.container {
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0 auto;
+}
+
+.wrap-medium {
+  max-width: 1320px;
+}
+
+.wrap-narrow {
+  max-width: 660px;
 }
 
 .intro {
@@ -150,13 +165,6 @@ time {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.container {
-  max-width: 1320px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin: 0 auto;
-}
-
 .menu {
   display: flex;
   justify-content: center;
@@ -204,7 +212,7 @@ address:hover {
   padding-bottom: 24px;
 }
 
-/*header*/
+/* header */
 .title {
   display: flex;
   height: calc(100vh - 90px);
@@ -251,6 +259,7 @@ address:hover {
 .banner {
   display: flex;
   margin-bottom: 80px;
+  border: 1px solid var(--secondary-color);
 }
 
 .banner-text {
@@ -269,7 +278,7 @@ address:hover {
   font-weight: 700;
 }
 
-/*main*/
+/* blog main */
 .search-bar {
   display: flex;
   max-width: 418px;
@@ -336,18 +345,23 @@ address:hover {
 .page-number {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  letter-spacing: 12px;
   margin-bottom: 80px;
 }
+.page-number .page-button {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
 .page-number a {
+  display: block;
   color: var(--secondary-color);
 }
 .page-number a:hover {
   transform: scale(1.5);
 }
 .page-number a:active {
-  transform: scale(0.9);
+  transform: scale(1);
 }
 
 .ellipsis {
@@ -356,6 +370,58 @@ address:hover {
 
 .current-page {
   color: var(--primary-color);
+}
+
+.blog-article {
+  margin-bottom: 48px;
+}
+.blog-article img {
+  margin-bottom: 24px;
+}
+
+.blog-title-large {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 24px;
+}
+
+.blog-title-medium {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.text-block {
+  margin-bottom: 24px;
+}
+.text-block p {
+  margin-bottom: 8px;
+}
+.text-block ol {
+  list-style: reset;
+  padding-left: 24px;
+}
+.text-block ul {
+  list-style-type: disc;
+  padding-left: 24px;
+}
+
+.quote {
+  font-weight: 700;
+  padding: 24px;
+  background: var(--quote);
+  border-radius: 24px;
+  margin-bottom: 24px;
+}
+
+.mark {
+  color: var(--primary-color);
+}
+
+.link {
+  color: var(--primary-color);
+  text-decoration: underline;
 }
 
 /* header RWD */
@@ -373,14 +439,21 @@ address:hover {
   .banner {
     flex-wrap: wrap;
     margin-bottom: 64px;
+    padding-bottom: 48px;
   }
   .banner .img-box {
     width: 100%;
     margin-bottom: 48px;
   }
+  .banner .img-box img {
+    height: calc(100vh - 90px - 206px);
+  }
   .banner .text-box {
     width: 100%;
     margin: 0 auto;
+  }
+  .banner .text-box .text-shadow {
+    text-shadow: none;
   }
   .banner .banner-text {
     max-width: 100%;
@@ -406,7 +479,9 @@ address:hover {
   }
   .title .img-box {
     width: 100%;
+    content: url("/img/mobile/header/Hero_Section.png");
     height: calc(100vh - 90px - 168px);
+    object-fit: cover;
   }
   .text-box {
     width: 100%;
@@ -416,6 +491,9 @@ address:hover {
   }
   .title-text {
     padding: 24px;
+  }
+  .banner .img-box {
+    content: url("/img/mobile/header/About_Section.png");
   }
 }
 /* main RWD */

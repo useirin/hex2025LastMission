@@ -5,7 +5,9 @@
         flex-wrap: wrap;
         .img-box {
             width: 100%;
+            content: url("/img/mobile/header/Hero_Section.png");
             height: calc(100vh - 90px - 168px);
+            object-fit: cover;
         }
     }
     .text-box {
@@ -16,6 +18,11 @@
     }
     .title-text {
         padding: 24px;
+    }
+    .banner {
+        .img-box {
+            content: url("/img/mobile/header/About_Section.png");
+        }
     }
 }
 
