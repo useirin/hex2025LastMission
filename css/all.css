@@ -434,7 +434,7 @@ address:hover {
     padding-right: 40px;
   }
   .title-text .sub-title {
-    font-size: clamp(18px, 7vw, 28px);
+    font-size: clamp(18px, 9vw, 28px);
   }
   .banner {
     flex-wrap: wrap;
