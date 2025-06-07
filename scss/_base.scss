@@ -1,7 +1,7 @@
-/* Debug用*/
+/* Debug用
 *{
     outline: solid 1px green;
-}
+}*/
 
 *,*:before,*:after{
 	box-sizing: border-box;
@@ -26,6 +26,20 @@ a {
 
 time {
     padding: 4px;
+    display: block;
+}
+
+.container {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+}
+
+.wrap-medium {
+    max-width: 1320px;
+}
+.wrap-narrow {
+    max-width: 660px;
 }
 
 .intro {
