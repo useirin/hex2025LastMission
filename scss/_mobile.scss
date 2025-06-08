@@ -1,6 +1,6 @@
 /* base RWD */
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
     .break-line {
         display: inline-block;
     }
@@ -47,6 +47,9 @@
         &-text {
             padding: 40px 24px;
         }
+    }
+    .podcast-card{
+        width: 100%;
     }
 }
 
