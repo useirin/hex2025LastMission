@@ -1,3 +1,11 @@
+/* base RWD */
+
+@media (max-width: 767px) {
+    .break-line {
+        display: inline-block;
+    }
+}
+
 /* header RWD */
 
 @media (max-width: 767px) {
@@ -26,7 +34,25 @@
     }
 }
 
-/* main RWD */
+/* index main RWD */
+
+@media (max-width: 767px) {
+    .title-text {
+        padding-bottom: 160px;
+    }
+    .feedback{
+        &-photo {
+            content: url(../img/mobile/index_photo8.png);
+        }
+        &-text {
+            padding: 40px 24px;
+        }
+    }
+}
+
+
+
+/* Blog main RWD */
 
 @media (max-width: 767px) {
     .card-list {
@@ -37,6 +63,6 @@
         margin-bottom: 32px;
     }
     .page-number {
-    margin-bottom: 64px;
+        margin-bottom: 64px;
     }
 }

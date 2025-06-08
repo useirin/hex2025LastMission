@@ -67,6 +67,7 @@ button {
   --text-color-primary: #000;
   --text-color-secondary: #fff;
   --quote: #EDEDED;
+  --background-white: #fff;
 }
 
 /* Debug用
@@ -136,8 +137,22 @@ a {
   margin-left: 4px;
 }
 
+.text-gray {
+  color: var(--secondary-color);
+}
+
+.mark {
+  color: var(--primary-color);
+}
+
+.link {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
 .btn-primary {
   color: var(--primary-color);
+  background: var(--background-white);
   text-align: center;
   border: 1px solid var(--primary-color);
   border-radius: 40px;
@@ -164,6 +179,14 @@ a {
 
 .text-shadow {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.break-line {
+  display: none;
+}
+
+.bg-white {
+  background: var(--background-white);
 }
 
 .menu {
@@ -277,6 +300,149 @@ a {
 .blog-title {
   font-size: 28px;
   font-weight: 700;
+}
+
+.overlap-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.introduce {
+  max-width: 1077px;
+  padding: 80px 40px;
+  margin: -160px 80px 0;
+  align-self: flex-end;
+}
+.introduce .word {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+.introduce p {
+  margin-bottom: 16px;
+}
+
+/* 避免重疊物件破版，提早轉mobile設計 */
+@media (max-width: 1024px) {
+  .overlap-box {
+    gap: 0;
+  }
+  .introduce {
+    margin: 0px 12px;
+    padding: 40px 24px;
+  }
+}
+.pr-title {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.pr-list {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px auto 32px;
+  padding: 0 12px;
+}
+
+.pr-img {
+  max-width: 636px;
+}
+.pr-img img {
+  object-fit: cover;
+}
+
+.pr-text {
+  position: relative;
+  z-index: 1;
+  max-width: 480px;
+  padding: 64px 24px 24px;
+}
+
+.margin-minus-left {
+  margin-left: -40px;
+}
+
+.margin-minus-right {
+  margin-right: -40px;
+}
+
+.index-section {
+  padding-bottom: 80px;
+  padding-top: 80px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.service-title {
+  position: relative;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.service-title::before {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  left: 0;
+  bottom: 50px;
+  width: 30px;
+  height: 2.5px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+.contact-me i {
+  font-size: 40px;
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 80px;
+}
+.feedback-case {
+  margin-bottom: 40px;
+}
+.feedback-photo {
+  width: 60%;
+  padding: 24px;
+  background: var(--quote);
+}
+.feedback-text {
+  max-width: 526px;
+  padding: 80px 40px;
+}
+.feedback-text i {
+  color: var(--primary-color);
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+.feedback-text p {
+  font-weight: 700;
+}
+.feedback .sticky-top {
+  margin-left: -35%;
+}
+.feedback .sticky-bottom {
+  margin-left: 24px;
+  margin-top: -40px;
+  background: #F5F5F5;
+}
+.feedback .sticky-bottom a {
+  margin-top: 24px;
+}
+
+.feedback-podcast {
+  display: flex;
 }
 
 /* blog main */
@@ -416,15 +582,6 @@ a {
   margin-bottom: 24px;
 }
 
-.mark {
-  color: var(--primary-color);
-}
-
-.link {
-  color: var(--primary-color);
-  text-decoration: underline;
-}
-
 /* header RWD */
 @media (max-width: 992px) {
   .img-box {
@@ -461,7 +618,26 @@ a {
     padding-left: 12px;
   }
 }
-/* main RWD */
+/* index main RWD */
+@media (max-width: 992px) {
+  .feedback {
+    flex-direction: column;
+  }
+  .feedback-photo {
+    width: 100%;
+  }
+  .feedback-text {
+    max-width: 968px;
+  }
+  .feedback .sticky-top {
+    margin-left: 0;
+    margin-top: -30%;
+  }
+  .feedback .sticky-bottom {
+    margin: 0;
+  }
+}
+/* Blog main RWD */
 @media (max-width: 992px) {
   .card {
     width: calc((100% - 24px) / 2);
@@ -471,6 +647,12 @@ a {
 @media (max-width: 992px) {
   .contact {
     display: none;
+  }
+}
+/* base RWD */
+@media (max-width: 767px) {
+  .break-line {
+    display: inline-block;
   }
 }
 /* header RWD */
@@ -497,7 +679,19 @@ a {
     content: url("../img/mobile/header/About_Section.png");
   }
 }
-/* main RWD */
+/* index main RWD */
+@media (max-width: 767px) {
+  .title-text {
+    padding-bottom: 160px;
+  }
+  .feedback-photo {
+    content: url(../img/mobile/index_photo8.png);
+  }
+  .feedback-text {
+    padding: 40px 24px;
+  }
+}
+/* Blog main RWD */
 @media (max-width: 767px) {
   .card-list {
     gap: 0;

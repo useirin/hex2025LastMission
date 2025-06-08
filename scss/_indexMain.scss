@@ -1,0 +1,142 @@
+.overlap-box{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.introduce {
+    max-width: 1077px;
+    padding: 80px 40px;
+    margin: -160px 80px 0;
+    align-self: flex-end;
+    .word {
+        font-size: $font-size-medium;
+        margin-bottom: 16px;
+    }
+    p {
+        margin-bottom: 16px;
+    }
+}
+
+/* 避免重疊物件破版，提早轉mobile設計 */
+
+@media (max-width: 1024px) {
+    .overlap-box {
+        gap: 0;
+    }
+    .introduce {
+        margin: 0px 12px;
+        padding: 40px 24px;
+    }
+}
+
+.pr-title {
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
+}
+.pr-list {
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px auto 32px;
+    padding: 0 12px;
+}
+.pr-img {
+    max-width: 636px;
+    img {
+        object-fit: cover;
+    }
+}
+.pr-text {
+    position: relative;
+    z-index: 1;
+    max-width: 480px;
+    padding: 64px 24px 24px;
+}
+
+.margin-minus-left {
+    margin-left: -40px;
+}
+.margin-minus-right {
+    margin-right: -40px;
+}
+
+.index-section {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.service {
+    &-title {
+    position: relative;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
+    margin-bottom: 8px;
+        &::before {
+            content: "";
+            position: absolute;
+            transform: translateY(-50%);
+            left: 0;
+            bottom: 50px;
+            width: 30px;
+            height: 2.5px;
+            background-color: var(--primary-color);
+            border-radius: 20px;
+        }
+    }
+}
+
+.contact-me {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
+    i {
+        font-size: 40px;
+    }
+}
+
+
+.feedback {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 80px;
+    &-case {
+        margin-bottom: 40px;
+    }
+    &-photo {
+        width: 60%;
+        padding: 24px;
+        background: var(--quote);
+        }
+    &-text {
+        max-width: 526px;
+        padding: 80px 40px;
+        i {
+            color: var(--primary-color);
+            font-size: 40px;
+            margin-bottom: 24px;
+        }
+        p {
+            font-weight: $font-weight-bold;
+        }
+    }
+    .sticky-top {
+    margin-left: -35%;
+    }
+    .sticky-bottom {
+        margin-left: 24px;
+        margin-top: -40px;
+        background: #F5F5F5;
+        a {
+            margin-top: 24px;
+        }
+    }
+}
+.feedback-podcast {
+    display: flex;
+}
