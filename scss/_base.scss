@@ -24,11 +24,6 @@ a {
     color: var(--text-color-primary);
 }
 
-time {
-    padding: 4px;
-    display: block;
-}
-
 .container {
     padding-left: 12px;
     padding-right: 12px;
@@ -49,6 +44,11 @@ time {
     line-clamp: 2;
     -webkit-line-clamp: 2;
     overflow: hidden;
+}
+
+.article-time {
+    padding: 4px;
+    display: block;
 }
 
 .sticker {
