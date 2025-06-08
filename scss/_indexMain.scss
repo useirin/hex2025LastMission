@@ -1,0 +1,21 @@
+.overlap-box{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.introduce {
+    max-width: 1077px;
+    background: var(--background-float);
+    padding: 80px 40px;
+    margin: -160px 80px 0;
+    align-self: flex-end;
+    .word {
+        font-size: $font-size-medium;
+        margin-bottom: 16px;
+    }
+    p {
+        margin-bottom: 16px;
+    }
+}
+

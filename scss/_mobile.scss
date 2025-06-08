@@ -26,7 +26,24 @@
     }
 }
 
-/* main RWD */
+/* index maon RWD */
+
+@media (max-width: 767px) {
+    .overlap-box {
+        gap: 0;
+    }
+    .title-text {
+        padding-bottom: 160px;
+    }
+    .introduce {
+        margin: 0px 12px;
+        padding: 40px 24px;
+        
+    }
+}
+
+
+/* Blog main RWD */
 
 @media (max-width: 767px) {
     .card-list {

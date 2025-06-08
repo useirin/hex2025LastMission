@@ -67,6 +67,7 @@ button {
   --text-color-primary: #000;
   --text-color-secondary: #fff;
   --quote: #EDEDED;
+  --background-float: #fff;
 }
 
 /* Debug用
@@ -277,6 +278,27 @@ a {
 .blog-title {
   font-size: 28px;
   font-weight: 700;
+}
+
+.overlap-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.introduce {
+  max-width: 1077px;
+  background: var(--background-float);
+  padding: 80px 40px;
+  margin: -160px 80px 0;
+  align-self: flex-end;
+}
+.introduce .word {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+.introduce p {
+  margin-bottom: 16px;
 }
 
 /* blog main */
@@ -497,7 +519,20 @@ a {
     content: url("../img/mobile/header/About_Section.png");
   }
 }
-/* main RWD */
+/* index maon RWD */
+@media (max-width: 767px) {
+  .overlap-box {
+    gap: 0;
+  }
+  .title-text {
+    padding-bottom: 160px;
+  }
+  .introduce {
+    margin: 0px 12px;
+    padding: 40px 24px;
+  }
+}
+/* Blog main RWD */
 @media (max-width: 767px) {
   .card-list {
     gap: 0;
