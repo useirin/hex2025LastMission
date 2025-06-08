@@ -80,6 +80,16 @@
     .podcast-card{
         width: 40%;
     }
+    .epaper {
+        flex-wrap: wrap;
+        .img-box, 
+        .text-box {
+            width: 100%;
+        }
+        .subscribe {
+            padding: 40px 24px;
+        }
+    }
 }
 
 
