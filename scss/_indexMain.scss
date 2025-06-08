@@ -33,7 +33,6 @@
 .index-section {
     padding-bottom: 80px;
     padding-top: 80px;
-    border-bottom: 1px solid var(--secondary-color);
 }
 
 .index-h3 {
@@ -103,6 +102,22 @@
     }
 }
 
+.best-of-blog{
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+.swiper-wrapper-area {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.swiper {
+    width: 90%;
+}
+
+
 
 .feedback {
     display: flex;
@@ -171,5 +186,43 @@
     i {
         margin-right: 8px;
         color: var(--primary-color);
+    }
+}
+
+.epaper {
+    display: flex;
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+.out-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe {
+    max-width: 80%;
+    padding: 80px;
+    p {
+        font-size: 20px;
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+    &-form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    &-input {
+        padding: 8px 16px;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        background-color: #F1F1F1;
+        &::placeholder {
+            color: var(--secondary-color);
+        }
+    }
+    .btn-primary {
+        margin-top: 24px;
     }
 }

@@ -77,6 +77,8 @@ a {
 }
 
 .btn-primary {
+    display: inline-block;
+    align-self: flex-start; //解決父層flex強制變block的問題
     color: var(--primary-color);
     background: var(--background-white);
     text-align: center;
@@ -91,7 +93,7 @@ a {
 
 .btn-secondary {
     display: inline-block;
-    align-self: flex-start; //解決父層flex強制變block的問題
+    align-self: flex-start;
     color: var(--secondary-color);
     text-align: center;
     border: 1px solid var(--text-color-primary);
