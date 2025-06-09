@@ -37,6 +37,9 @@
 /* index main RWD */
 
 @media (max-width: 767px) {
+    .index-title {
+    font-size: calc($font-size-large * 75%);
+}
     .title-text {
         padding-bottom: 160px;
     }
@@ -46,6 +49,9 @@
         }
         &-text {
             padding: 40px 24px;
+        }
+        .sticky-top {
+            margin-top: -30%;
         }
     }
     .podcast-card{
