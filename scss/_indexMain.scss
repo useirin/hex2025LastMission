@@ -18,18 +18,6 @@
     }
 }
 
-/* 避免重疊物件破版，提早轉mobile設計 */
-
-@media (max-width: 1024px) {
-    .overlap-box {
-        gap: unset;
-    }
-    .introduce {
-        margin: 0px 12px;
-        padding: 40px 24px;
-    }
-}
-
 .index-section {
     padding-bottom: 80px;
     padding-top: 80px;
