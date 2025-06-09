@@ -77,7 +77,7 @@
             margin: 0;
         }
         &-podcast {
-        flex-wrap: wrap;
+            flex-wrap: wrap;
         }
     }
     .podcast-card{
@@ -112,8 +112,4 @@
     .contact{
         display: none;
     }
-}
-
-@media (max-width: 992px) {
-    
 }

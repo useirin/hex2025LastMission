@@ -496,7 +496,7 @@ a {
   border-bottom: 1px solid var(--secondary-color);
 }
 
-.bg-box {
+.subscribe-bg {
   display: flex;
   justify-content: center;
   align-items: center;
