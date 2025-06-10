@@ -872,6 +872,11 @@ a {
     flex-basis: 100%;
   }
 }
+@media (max-width: 374px) {
+  .introduce {
+    margin-top: 120px;
+  }
+}
 /* Blog main RWD */
 @media (max-width: 767px) {
   .card-list {
