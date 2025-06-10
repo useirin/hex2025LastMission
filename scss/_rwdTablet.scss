@@ -42,6 +42,10 @@
 /* index main RWD */
 
 @media (max-width: 992px) {
+    .index-section {
+        padding-bottom: 64px;
+        padding-top: 64px;
+    }
     .pr-list {
         flex-direction: column;
     }
@@ -60,21 +64,20 @@
     
     .feedback {
         flex-direction: column;
-        &-photo {
+        margin-bottom: 40px;
+        &-photo, &-text {
+            max-width: unset;
             width: 100%;
-        }
-        &-text {
-            max-width: calc(992px - 12px * 2);
         }
         .sticky-top {
             margin-left: 0;
-            margin-top: -30%;
+            margin-top: -10%;
         }
         .sticky-bottom {
             margin: 0;
         }
         &-podcast {
-        flex-wrap: wrap;
+            flex-wrap: wrap;
         }
     }
     .podcast-card{
@@ -87,6 +90,7 @@
             width: 100%;
         }
         .subscribe {
+            width: calc(100% - 12px * 2);
             padding: 40px 24px;
         }
     }
@@ -108,8 +112,4 @@
     .contact{
         display: none;
     }
-}
-
-@media (max-width: 992px) {
-    
 }

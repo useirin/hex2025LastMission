@@ -1,7 +1,7 @@
 .overlap-box{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 16px; //保障副標與自介框的間距
 }
 
 .introduce {
@@ -18,21 +18,14 @@
     }
 }
 
-/* 避免重疊物件破版，提早轉mobile設計 */
-
-@media (max-width: 1024px) {
-    .overlap-box {
-        gap: 0;
-    }
-    .introduce {
-        margin: 0px 12px;
-        padding: 40px 24px;
-    }
-}
-
 .index-section {
     padding-bottom: 80px;
     padding-top: 80px;
+}
+
+.index-title {
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
 }
 
 .index-h3 {
@@ -58,10 +51,6 @@
     }
 }
 
-.pr-title {
-    font-size: $font-size-large;
-    font-weight: $font-weight-bold;
-}
 .pr-list {
     max-width: 1100px;
     display: flex;
@@ -102,7 +91,7 @@
     }
 }
 
-.best-of-blog{
+.best-of-blog {
     border-top: 1px solid var(--secondary-color);
     border-bottom: 1px solid var(--secondary-color);
 }
@@ -123,12 +112,9 @@
     display: flex;
     align-items: center;
     margin-top: 24px;
-    margin-bottom: 80px;
-    &-case {
-        margin-bottom: 40px;
-    }
+    margin-bottom: 40px;
     &-photo {
-        width: 60%;
+        max-width: 745px;
         padding: 24px;
         background: var(--quote);
         }
@@ -145,7 +131,7 @@
         }
     }
     .sticky-top {
-    margin-left: -35%;
+        margin-left: -35%;
     }
     .sticky-bottom {
         margin-left: 24px;
@@ -194,13 +180,13 @@
     border-top: 1px solid var(--secondary-color);
     border-bottom: 1px solid var(--secondary-color);
 }
-.out-box {
+.subscribe-bg {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .subscribe {
-    max-width: 80%;
+    margin: 12px;
     padding: 80px;
     p {
         font-size: 20px;
@@ -224,5 +210,35 @@
     }
     .btn-primary {
         margin-top: 24px;
+    }
+}
+
+.link-list {
+    address {
+        margin-top: 24px;
+    }
+}
+
+.contact-list {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--text-color-primary);
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    .email-link {
+        font-size: 32px;
+        text-decoration: underline;
+        margin-right: 16px;
+    }
+    img {
+        width: 44px;
+        margin-right: 8px;
+    }
+    p {
+        font-size: $font-size-medium;
+        flex-grow: 1;
+    }
+    i {
+        font-size: $font-size-small;
     }
 }

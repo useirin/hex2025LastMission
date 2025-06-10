@@ -37,8 +37,11 @@
 /* index main RWD */
 
 @media (max-width: 767px) {
+    .index-title {
+        font-size: calc($font-size-large * 0.75);
+    }
     .title-text {
-        padding-bottom: 160px;
+        padding-bottom: 160px; //延展底部做出重疊效果
     }
     .feedback{
         &-photo {
@@ -47,9 +50,26 @@
         &-text {
             padding: 40px 24px;
         }
+        .sticky-top {
+            margin-top: -30%;
+        }
     }
     .podcast-card{
         width: 100%;
+    }
+    .contact-list {
+        flex-wrap: wrap;
+        .email-link {
+            font-size: $font-size-small;
+            flex-basis: 100%;
+            margin-bottom: 8px;
+        }
+        .cooperate {
+            flex-basis: 100%;
+        }
+        a {
+            flex-basis: 100%;
+        }
     }
 }
 
@@ -57,11 +77,10 @@
 
 @media (max-width: 767px) {
     .card-list {
-        gap: 0;
+        gap: 32px 0px;
     }
     .card {
         width: 100%;
-        margin-bottom: 32px;
     }
     .page-number {
         margin-bottom: 64px;
