@@ -57,6 +57,20 @@
     .podcast-card{
         width: 100%;
     }
+    .contact-list {
+        flex-wrap: wrap;
+        .email-link {
+            font-size: $font-size-small;
+            flex-basis: 100%;
+            margin-bottom: 8px;
+        }
+        .cooperate {
+            flex-basis: 100%;
+        }
+        a {
+            flex-basis: 100%;
+        }
+    }
 }
 
 /* Blog main RWD */
