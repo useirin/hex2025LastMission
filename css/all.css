@@ -401,6 +401,7 @@ a {
 }
 .contact-me i {
   font-size: 40px;
+  margin-left: 8px;
 }
 
 .best-of-blog {
@@ -414,15 +415,36 @@ a {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  margin-top: 24px;
 }
 
 .swiper {
   width: 90%;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  color: var(--primary-color);
+  background: var(--background-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: var(--text-color-primary);
+}
+.swiper-button-prev i,
+.swiper-button-next i {
+  font-size: 44px;
 }
 
 .feedback {
@@ -876,6 +898,18 @@ a {
   }
   .contact-list a {
     flex-basis: 100%;
+  }
+  .swiper-wrapper-area {
+    display: block;
+    height: 450px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 100%;
+  }
+  .swiper-button-prev {
+    left: auto;
+    right: 15%;
   }
 }
 @media (max-width: 374px) {

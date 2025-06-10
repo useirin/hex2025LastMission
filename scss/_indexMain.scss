@@ -88,6 +88,7 @@
     font-weight: $font-weight-bold;
     i {
         font-size: 40px;
+        margin-left: 8px;
     }
 }
 
@@ -101,6 +102,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-top: 24px;
 }
 .swiper {
     width: 90%;
@@ -110,11 +112,8 @@
 .swiper-button-next {
     position: absolute;
     top: 50%;
-    width: 44px;
-    height: 44px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    color: var(--primary-color);
+    background: var(--background-white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,6 +121,12 @@
     z-index: 10;
     &::after {
         display: none;
+    }
+    &:hover {
+        color: var(--text-color-primary);
+    }
+    i {
+        font-size: 44px;
     }
 }
 

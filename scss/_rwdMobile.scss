@@ -71,6 +71,18 @@
             flex-basis: 100%;
         }
     }
+    .swiper-wrapper-area {
+        display: block;
+        height: 450px;
+    }
+    .swiper-button-next, 
+    .swiper-button-prev {
+        top: 100%;
+    }
+    .swiper-button-prev {
+        left: auto;
+        right: 15%;
+    }
 }
 
 @media (max-width: 374px) {
