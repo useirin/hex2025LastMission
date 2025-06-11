@@ -74,6 +74,9 @@ a {
 .link {
     color: var(--primary-color);
     text-decoration: underline;
+    &:hover {
+        color: var(--secondary-color);
+    }
 }
 
 .btn-primary {

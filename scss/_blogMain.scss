@@ -16,6 +16,7 @@
     }
     &:has(input:focus) {
         border-color: var(--primary-color);
+        transition: border-color 0.3s ease;
     }
     
 }
@@ -48,7 +49,7 @@
         font-size: $font-size-small;
         padding-right: 4px;
         &:hover {
-            filter: brightness(0.5);
+            filter: brightness(0.3);
         }
     }
 }

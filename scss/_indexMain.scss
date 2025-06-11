@@ -88,6 +88,10 @@
     font-weight: $font-weight-bold;
     i {
         font-size: 40px;
+        margin-left: 8px;
+        &:hover {
+            color: var(--secondary-color);
+        }
     }
 }
 
@@ -101,12 +105,33 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-top: 24px;
 }
 .swiper {
     width: 90%;
 }
 
-
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    color: var(--primary-color);
+    background: var(--background-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    &::after {
+        display: none;
+    }
+    &:hover {
+        color: var(--text-color-primary);
+    }
+    i {
+        font-size: 44px;
+    }
+}
 
 .feedback {
     display: flex;
@@ -240,5 +265,8 @@
     }
     i {
         font-size: $font-size-small;
+        &:hover {
+        color: var(--secondary-color);
+        }
     }
 }
