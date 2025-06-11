@@ -406,6 +406,9 @@ a {
   font-size: 40px;
   margin-left: 8px;
 }
+.contact-me i:hover {
+  color: var(--secondary-color);
+}
 
 .best-of-blog {
   border-top: 1px solid var(--secondary-color);
@@ -588,6 +591,9 @@ a {
 .contact-list i {
   font-size: 24px;
 }
+.contact-list i:hover {
+  color: var(--secondary-color);
+}
 
 /* blog main */
 .search-bar {
@@ -640,7 +646,7 @@ a {
   padding-right: 4px;
 }
 .tags a:hover {
-  filter: brightness(0.5);
+  filter: brightness(0.3);
 }
 
 .card-body {
@@ -748,9 +754,6 @@ a {
 }
 /* header RWD */
 @media (max-width: 992px) {
-  .img-box {
-    width: 50%;
-  }
   .title-text {
     padding-left: 40px;
     padding-right: 40px;
@@ -802,6 +805,9 @@ a {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+  }
+  .swiper {
+    width: 80%;
   }
   .feedback {
     flex-direction: column;
@@ -886,6 +892,18 @@ a {
   .title-text {
     padding-bottom: 160px;
   }
+  .swiper-wrapper-area {
+    display: block;
+    padding-bottom: 50px;
+  }
+  .swiper-wrapper-area .swiper-button-next,
+  .swiper-wrapper-area .swiper-button-prev {
+    top: 95%;
+  }
+  .swiper-wrapper-area .swiper-button-prev {
+    left: auto;
+    right: 15%;
+  }
   .feedback-photo {
     content: url(../img/mobile/index_photo8.png);
   }
@@ -911,18 +929,6 @@ a {
   }
   .contact-list a {
     flex-basis: 100%;
-  }
-  .swiper-wrapper-area {
-    display: block;
-    height: 450px;
-  }
-  .swiper-button-next,
-  .swiper-button-prev {
-    top: 100%;
-  }
-  .swiper-button-prev {
-    left: auto;
-    right: 15%;
   }
 }
 @media (max-width: 374px) {

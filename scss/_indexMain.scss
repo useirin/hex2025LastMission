@@ -89,6 +89,9 @@
     i {
         font-size: 40px;
         margin-left: 8px;
+        &:hover {
+            color: var(--secondary-color);
+        }
     }
 }
 
@@ -262,5 +265,8 @@
     }
     i {
         font-size: $font-size-small;
+        &:hover {
+        color: var(--secondary-color);
+        }
     }
 }
