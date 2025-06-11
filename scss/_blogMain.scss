@@ -16,6 +16,7 @@
     }
     &:has(input:focus) {
         border-color: var(--primary-color);
+        transition: border-color 0.3s ease;
     }
     
 }

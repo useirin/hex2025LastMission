@@ -150,6 +150,9 @@ a {
   color: var(--primary-color);
   text-decoration: underline;
 }
+.link:hover {
+  color: var(--secondary-color);
+}
 
 .btn-primary {
   display: inline-block;
@@ -232,7 +235,7 @@ a {
   height: 44px;
 }
 .media .sns:hover {
-  filter: brightness(0.5);
+  filter: brightness(0.1);
 }
 .media .sns:active {
   transform: scale(0.8);
@@ -604,6 +607,7 @@ a {
 }
 .search-bar:has(input:focus) {
   border-color: var(--primary-color);
+  transition: border-color 0.3s ease;
 }
 
 .search-icon {
@@ -721,6 +725,10 @@ a {
   background: var(--quote);
   border-radius: 24px;
   margin-bottom: 24px;
+}
+
+.related-post:hover {
+  opacity: 0.7;
 }
 
 .btn-pre-next {
