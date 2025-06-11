@@ -9,10 +9,11 @@ by 禹成林
 
 [X] LV1｜Blog 列表頁
 [X] LV2｜Blog 文章頁
-[ ] LV3｜index 首頁
+[X] LV3｜index 首頁
 [X] LV3｜串接 GA 分析
 
 ![GA分析截圖](img/GA02.png)
+
 
 ## 更新紀錄
 
@@ -26,3 +27,5 @@ by 禹成林
 2025-06-06｜後知後覺發現最終任務不能用 Codepen 交，打掉重練 again ^q^
 2025-06-07｜完成 Blog 列表及文章頁
 2025-06-08｜串接 Google Analytics，繳交最終任務 (LV2)
+~~為什麼輪播不會動QQ~~
+2025-06-10｜完成 index 首頁！

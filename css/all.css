@@ -723,6 +723,11 @@ a {
   margin-bottom: 24px;
 }
 
+.btn-pre-next {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* 避免重疊物件破版，提早轉mobile設計 */
 @media (max-width: 1024px) {
   .overlap-box {
