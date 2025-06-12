@@ -577,6 +577,9 @@ a {
   padding-bottom: 16px;
   margin-bottom: 16px;
 }
+.contact-list:hover {
+  color: var(--secondary-color);
+}
 .contact-list .email-link {
   font-size: 32px;
   text-decoration: underline;
@@ -592,9 +595,6 @@ a {
 }
 .contact-list i {
   font-size: 24px;
-}
-.contact-list i:hover {
-  color: var(--secondary-color);
 }
 
 /* blog main */

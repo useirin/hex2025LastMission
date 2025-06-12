@@ -286,6 +286,10 @@
     padding-bottom: 16px;
     margin-bottom: 16px;
 
+    &:hover {
+        color: var(--secondary-color);
+    }
+
     .email-link {
         font-size: 32px;
         text-decoration: underline;
@@ -304,9 +308,5 @@
 
     i {
         font-size: $font-size-small;
-
-        &:hover {
-            color: var(--secondary-color);
-        }
     }
 }
