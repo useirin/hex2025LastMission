@@ -49,12 +49,22 @@
                     <p>擅長 React、Vue 等框架，同時熱愛為轉職與新手工程師提供職涯指導。邀請你與我一起，開啟更具潛能的程式與職涯之旅！</p>
                 </div>
                 <ul class="media">
-                     <li class="sns"><a href="#"><img src="img/desktop/icons/Icon-yt.png" alt="youtube icon"></a></li>
-                     <li class="sns"><a href="#"><img src="img/desktop/icons/Icon-pod.png" alt="podcasts icon"></a></li>
-                     <li class="sns"><a href="#"><img src="img/desktop/icons/Icon-fb.png" alt="facebook icon"></a></li>
-                     <li class="sns"><a href="#"><img src="img/desktop/icons/Icon-in.png" alt="linkedin icon"></a></li>
-                     <li class="sns"><a href="#"><img src="img/desktop/icons/Icon-ig.png" alt="instagram icon"></a></li>
-                 </ul>
+                    <li class="sns">
+                        <a href="#"><img src="img/desktop/icons/Icon-yt.png" alt="youtube icon"></a>
+                    </li>
+                    <li class="sns">
+                        <a href="#"><img src="img/desktop/icons/Icon-pod.png" alt="podcasts icon"></a>
+                    </li>
+                    <li class="sns">
+                        <a href="#"><img src="img/desktop/icons/Icon-fb.png" alt="facebook icon"></a>
+                    </li>
+                    <li class="sns">
+                        <a href="#"><img src="img/desktop/icons/Icon-in.png" alt="linkedin icon"></a>
+                    </li>
+                    <li class="sns">
+                        <a href="#"><img src="img/desktop/icons/Icon-ig.png" alt="instagram icon"></a>
+                    </li>
+                </ul>
             </div>
         </section>
     </header>
@@ -383,7 +393,7 @@
 
     <footer class="footer">
         
-         <p class="copyright">&copy; 2025 Alyse Wang. All rights reserved.</p>
+        <p class="copyright">&copy; 2025 Alyse Wang. All rights reserved.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -399,6 +409,13 @@
             },
             slidesPerView: 1,
             breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    grid: {
+                        rows: 1
+                    },
+                    spaceBetween: 24
+                },
                 993: {
                     slidesPerView: 3,
                     grid: {

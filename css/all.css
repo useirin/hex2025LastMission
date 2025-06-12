@@ -75,7 +75,9 @@ button {
 *{
     outline: solid 1px green;
 }*/
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -157,6 +159,7 @@ a {
 .btn-primary {
   display: inline-block;
   align-self: flex-start;
+  /* 解決父層 flex 強制變 block 的問題*/
   color: var(--primary-color);
   background: var(--background-white);
   text-align: center;
@@ -281,7 +284,7 @@ a {
   padding-left: 80px;
 }
 .title-text .main-title {
-  font-size: clamp(52px, 10vw, 120px);
+  font-size: clamp(92px, 7vw, 120px);
   font-weight: 900;
   color: var(--primary-color);
 }
@@ -316,7 +319,6 @@ a {
 .overlap-box {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .introduce {
@@ -756,7 +758,6 @@ a {
 @media (max-width: 992px) {
   .title-text {
     padding-left: 40px;
-    padding-right: 40px;
   }
   .title-text .sub-title {
     font-size: clamp(18px, 9vw, 28px);
@@ -807,7 +808,7 @@ a {
     margin-right: 0;
   }
   .swiper {
-    width: 80%;
+    width: 85%;
   }
   .feedback {
     flex-direction: column;
@@ -889,8 +890,12 @@ a {
   .index-title {
     font-size: 48px;
   }
+  .swiper {
+    width: 100%;
+  }
   .title-text {
     padding-bottom: 160px;
+    /* 延展底部做出重疊效果 */
   }
   .swiper-wrapper-area {
     display: block;
@@ -902,7 +907,7 @@ a {
   }
   .swiper-wrapper-area .swiper-button-prev {
     left: auto;
-    right: 15%;
+    right: 68px;
   }
   .feedback-photo {
     content: url(../img/mobile/index_photo8.png);
@@ -934,6 +939,10 @@ a {
 @media (max-width: 374px) {
   .introduce {
     margin-top: 120px;
+    /* 標題文字換行對策 */
+  }
+  .contact-list .email-link {
+    font-size: 20px;
   }
 }
 /* Blog main RWD */

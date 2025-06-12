@@ -11,6 +11,7 @@
 @media (max-width: 767px) {
     .title {
         flex-wrap: wrap;
+
         .img-box {
             width: 100%;
             content: url("../img/mobile/header/Hero_Section.png");
@@ -18,15 +19,19 @@
             object-fit: cover;
         }
     }
+
     .text-box {
         width: 100%;
+
         .main-title {
-        font-size: $font-size-h1Mobile;
+            font-size: $font-size-h1Mobile;
         }
     }
+
     .title-text {
         padding: 24px;
     }
+
     .banner {
         .img-box {
             content: url("../img/mobile/header/About_Section.png");
@@ -40,48 +45,62 @@
     .index-title {
         font-size: calc($font-size-large * 0.75);
     }
+
+    .swiper {
+        width: 100%;
+    }
+
     .title-text {
-        padding-bottom: 160px; //延展底部做出重疊效果
+        padding-bottom: 160px;
+        /* 延展底部做出重疊效果 */
     }
 
     .swiper-wrapper-area {
         display: block;
         padding-bottom: 50px;
-        .swiper-button-next, 
+
+        .swiper-button-next,
         .swiper-button-prev {
             top: 95%;
         }
+
         .swiper-button-prev {
             left: auto;
-            right: 15%;
+            right: calc(44px + 24px);
         }
     }
 
-
-    .feedback{
+    .feedback {
         &-photo {
             content: url(../img/mobile/index_photo8.png);
         }
+
         &-text {
             padding: 40px 24px;
         }
+
         .sticky-top {
             margin-top: -30%;
         }
     }
-    .podcast-card{
+
+    .podcast-card {
         width: 100%;
     }
+
     .contact-list {
         flex-wrap: wrap;
+
         .email-link {
             font-size: $font-size-small;
             flex-basis: 100%;
             margin-bottom: 8px;
         }
+
         .cooperate {
             flex-basis: 100%;
         }
+
         a {
             flex-basis: 100%;
         }
@@ -90,7 +109,12 @@
 
 @media (max-width: 374px) {
     .introduce {
-        margin-top: 120px; //標題文字換行對策
+        margin-top: 120px;
+        /* 標題文字換行對策 */
+    }
+
+    .contact-list .email-link {
+        font-size: 20px;
     }
 }
 
@@ -100,9 +124,11 @@
     .card-list {
         gap: 32px 0px;
     }
+
     .card {
         width: 100%;
     }
+
     .page-number {
         margin-bottom: 64px;
     }

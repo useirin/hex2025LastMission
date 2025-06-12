@@ -1,7 +1,6 @@
-.overlap-box{
+.overlap-box {
     display: flex;
     flex-direction: column;
-    gap: 16px; //保障副標與自介框的間距
 }
 
 .introduce {
@@ -9,10 +8,12 @@
     padding: 80px 40px;
     margin: -160px 80px 0;
     align-self: flex-end;
+
     .word {
         font-size: $font-size-medium;
         margin-bottom: 16px;
     }
+
     p {
         margin-bottom: 16px;
     }
@@ -36,7 +37,8 @@
 
 .service {
     &-title {
-    position: relative;
+        position: relative;
+
         &::before {
             content: "";
             position: absolute;
@@ -59,12 +61,15 @@
     margin: 32px auto 32px;
     padding: 0 12px;
 }
+
 .pr-img {
     max-width: 636px;
+
     img {
         object-fit: cover;
     }
 }
+
 .pr-text {
     position: relative;
     z-index: 1;
@@ -75,6 +80,7 @@
 .margin-minus-left {
     margin-left: -40px;
 }
+
 .margin-minus-right {
     margin-right: -40px;
 }
@@ -86,9 +92,11 @@
     align-items: center;
     font-size: $font-size-medium;
     font-weight: $font-weight-bold;
+
     i {
         font-size: 40px;
         margin-left: 8px;
+
         &:hover {
             color: var(--secondary-color);
         }
@@ -99,6 +107,7 @@
     border-top: 1px solid var(--secondary-color);
     border-bottom: 1px solid var(--secondary-color);
 }
+
 .swiper-wrapper-area {
     position: relative;
     display: flex;
@@ -107,6 +116,7 @@
     overflow: hidden;
     margin-top: 24px;
 }
+
 .swiper {
     width: 90%;
 }
@@ -122,12 +132,15 @@
     align-items: center;
     cursor: pointer;
     z-index: 10;
+
     &::after {
         display: none;
     }
+
     &:hover {
         color: var(--text-color-primary);
     }
+
     i {
         font-size: 44px;
     }
@@ -138,62 +151,77 @@
     align-items: center;
     margin-top: 24px;
     margin-bottom: 40px;
+
     &-photo {
         max-width: 745px;
         padding: 24px;
         background: var(--quote);
-        }
+    }
+
     &-text {
         max-width: 526px;
         padding: 80px 40px;
+
         i {
             color: var(--primary-color);
             font-size: 40px;
             margin-bottom: 24px;
         }
+
         p {
             font-weight: $font-weight-bold;
         }
     }
+
     .sticky-top {
         margin-left: -35%;
     }
+
     .sticky-bottom {
         margin-left: 24px;
         margin-top: -40px;
+
         a {
             margin-top: 24px;
         }
     }
 }
+
 .feedback-podcast {
     display: flex;
     padding: 24px;
     gap: 24px;
+
     img {
         max-width: 80px;
     }
 }
+
 .podcast-card {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+
     a {
         margin-top: 16px;
     }
 }
+
 .podcast-text {
     flex: 1;
     padding-top: 16px;
     padding-bottom: 16px;
     border-bottom: 1px solid var(--secondary-color);
+
     .index-h3 {
         font-size: $font-size-small;
     }
 }
+
 .check {
     display: flex;
     margin-bottom: 8px;
+
     i {
         margin-right: 8px;
         color: var(--primary-color);
@@ -205,34 +233,41 @@
     border-top: 1px solid var(--secondary-color);
     border-bottom: 1px solid var(--secondary-color);
 }
+
 .subscribe-bg {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .subscribe {
     margin: 12px;
     padding: 80px;
+
     p {
         font-size: 20px;
         margin-top: 16px;
         margin-bottom: 24px;
     }
+
     &-form {
         display: flex;
         flex-direction: column;
         gap: 8px;
     }
+
     &-input {
         padding: 8px 16px;
         font-size: 20px;
         border: none;
         outline: none;
         background-color: #F1F1F1;
+
         &::placeholder {
             color: var(--secondary-color);
         }
     }
+
     .btn-primary {
         margin-top: 24px;
     }
@@ -250,23 +285,28 @@
     border-bottom: 1px solid var(--text-color-primary);
     padding-bottom: 16px;
     margin-bottom: 16px;
+
     .email-link {
         font-size: 32px;
         text-decoration: underline;
         margin-right: 16px;
     }
+
     img {
         width: 44px;
         margin-right: 8px;
     }
+
     p {
         font-size: $font-size-medium;
         flex-grow: 1;
     }
+
     i {
         font-size: $font-size-small;
+
         &:hover {
-        color: var(--secondary-color);
+            color: var(--secondary-color);
         }
     }
 }
