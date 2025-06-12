@@ -7,6 +7,7 @@
     border-radius: $border-radius;
     padding: 8px 16px;
     margin-bottom: 40px;
+
     input {
         flex: 1;
         font-size: 16px;
@@ -14,12 +15,14 @@
         outline: none;
         background: transparent;
     }
+
     &:has(input:focus) {
         border-color: var(--primary-color);
         transition: border-color 0.3s ease;
     }
-    
+
 }
+
 .search-icon {
     color: var(--secondary-color);
     font-size: $font-size-small;
@@ -32,14 +35,16 @@
     margin-bottom: 40px;
     gap: 80px 24px;
 }
+
 .card {
     width: calc((100% - 2 * 24px) / 3);
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;
+
     &-head {
-    padding-bottom: 16px;
-    width: 100%;
+        padding-bottom: 16px;
+        width: 100%;
     }
 }
 
@@ -48,17 +53,21 @@
         color: var(--primary-color);
         font-size: $font-size-small;
         padding-right: 4px;
+
         &:hover {
             filter: brightness(0.3);
         }
     }
 }
+
 .card-body {
     display: flex;
     flex-direction: column;
+
     .summary {
         flex-grow: 1;
     }
+
     .intro {
         color: var(--secondary-color);
     }
@@ -68,26 +77,32 @@
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
+
     .page-button {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
     }
+
     a {
         display: block;
         color: var(--secondary-color);
+
         &:hover {
             transform: scale(1.5);
         }
+
         &:active {
             transform: scale(1.0);
         }
     }
 }
+
 .ellipsis {
     color: var(--secondary-color);
 }
+
 .current-page {
     color: var(--primary-color);
 }

@@ -1,43 +1,52 @@
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     font-size: $font-size-medium;
     font-weight: $font-weight-bold;
-    li{
+
+    li {
         margin: 24px 20px;
     }
-    a:hover{
+
+    a:hover {
         box-shadow: inset 0 -3px 0 var(--text-color-primary);
     }
 }
 
-.contact{
+.contact {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 80px;
     margin-bottom: 80px;
 }
-.mail{
+
+.mail {
     font-size: 32px;
-    &:hover{
+
+    &:hover {
         opacity: 0.7;
     }
 }
-.media{
+
+.media {
     display: flex;
-    .sns{
+
+    .sns {
         width: 44px;
         height: 44px;
-        &:hover{
+
+        &:hover {
             filter: brightness(0.1);
         }
-        &:active{
+
+        &:active {
             transform: scale(0.8);
         }
     }
 }
-.copyright{
+
+.copyright {
     text-align: center;
     padding-top: 24px;
     padding-bottom: 24px;
